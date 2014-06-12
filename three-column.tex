@@ -193,19 +193,20 @@
             draw=none},
           ylabel={F1-Score},
           ylabel near ticks,
-          symbolic x coords={en$\rightarrow$de,de$\rightarrow$en},
+          symbolic x coords={enXde,deXen},
+          xticklabels={en$\rightarrow$de,de$\rightarrow$en},
           nodes near coords,
           nodes near coords align={vertical},
           every node near coord/.append style={font=\small},
           bar width=45pt,
           x=400pt,
           ]
-        \addplot[black,fill=black!25]   coordinates {(en$\rightarrow$de,46.8) (de$\rightarrow$en,46.8)};
-        \addplot[red,fill=red!25]     coordinates {(en$\rightarrow$de,65.1) (de$\rightarrow$en,68.6)};
-        \addplot[teal,fill=teal!25]     coordinates {(en$\rightarrow$de,68.1) (de$\rightarrow$en,67.4)};
-        \addplot[brown,fill=brown!25]     coordinates {(en$\rightarrow$de,77.6) (de$\rightarrow$en,71.1)};
-        \addplot[blue,fill=blue!75]     coordinates {(en$\rightarrow$de,83.7) (de$\rightarrow$en,71.4)};
-        \addplot[purple,fill=purple!75] coordinates {(en$\rightarrow$de,86.2) (de$\rightarrow$en,76.9)};
+        \addplot[black,fill=black!25]   coordinates {(enXde,46.8) (deXen,46.8)};
+        \addplot[red,fill=red!25]     coordinates {(enXde,65.1) (deXen,68.6)};
+        \addplot[teal,fill=teal!25]     coordinates {(enXde,68.1) (deXen,67.4)};
+        \addplot[brown,fill=brown!25]     coordinates {(enXde,77.6) (deXen,71.1)};
+        \addplot[blue,fill=blue!75]     coordinates {(enXde,83.7) (deXen,71.4)};
+        \addplot[purple,fill=purple!75] coordinates {(enXde,86.2) (deXen,76.9)};
     \legend{Majority~~,Gloss~~,MT~~,I-Matrix~~,\biCVM~~,\biCVMplus}
       \end{axis}
     \end{tikzpicture}
